@@ -20,10 +20,10 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 text.match(/^[A-Z].+[[:punct:]]$/) ? true : false
 end
 
-# def valid_phone_number?(phone)
-#   phone.match(/([0-9] *?){10}|(\([0-9]{3}\)(([0-9]{3}-[0-9]{4})|[0-9]{7})\b)/) ? true : false
-# end
-
 def valid_phone_number?(phone)
-  phone.scan(/^\d*?{3}\D(0,1)\D{3}\D(0,1)\D{4}$/) ? true : false
+  phone.match(/([0-9] *?){10}|(\([0-9]{3}\)(([0-9]{3}-[0-9]{4})|[0-9]{7})\b)/) ? true : false
 end
+
+# def valid_phone_number?(phone)
+#   phone.scan(/^\d*?{3}\D(0,1)\D{3}\D(0,1)\D{4}$/) ? true : false
+# end
