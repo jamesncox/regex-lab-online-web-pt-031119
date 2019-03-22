@@ -26,5 +26,4 @@ end
 
 def valid_phone_number?(phone)
   phone.scan(/^{3}\D(0,1)\D{3}\D(0,1)\D{4}$/) ? true : false
-  binding.pry
 end
