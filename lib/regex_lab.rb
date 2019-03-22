@@ -15,7 +15,7 @@ end
 # end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-text.match(/^[[:alnum:]].+[[:punct:]]$/) ? true : false
+text.match(/^[[:a0]].+[[:punct:]]$/) ? true : false
 
 end
 
