@@ -1,4 +1,6 @@
-def starts_with_a_vowel?(word)
+require 'pry'
+
+1def starts_with_a_vowel?(word)
   word.match(/^[aeiouAEIOU]\w+/) ? true : false
 end
 
@@ -25,5 +27,6 @@ end
 
 def valid_phone_number?(phone)
 phone.scan(/^\D{3}\D(0,1)\D{3}\D(0,1)\D{4}$/) ? true : false
+binding.pry
 
 end
